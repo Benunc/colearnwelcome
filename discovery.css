@@ -58,6 +58,22 @@ body {
   font-weight: 600;
 }
 
+.boxbox .nouser-message {
+  margin: 1rem 0;
+  text-align: left;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.boxbox .nouser-message a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.boxbox .nouser-message a:hover {
+  text-decoration: underline;
+}
+
 .buttonbox {
   display: flex;
   flex-direction: column;
