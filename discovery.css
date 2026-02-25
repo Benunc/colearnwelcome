@@ -64,45 +64,62 @@ body {
   gap: 0.75rem;
 }
 
-.buttonbox p {
+.buttonbox form {
   margin: 0;
 }
 
-.buttonbox a {
+.buttonbox .btn {
   display: block;
+  width: 100%;
   padding: 0.75rem 1.25rem;
   border-radius: 8px;
   font-family: var(--bodytext);
   font-size: 0.9375rem;
   font-weight: 500;
-  text-decoration: none;
   text-align: center;
   transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   border: none;
   cursor: pointer;
 }
 
-/* Primary buttons (Student, Teacher/Staff) */
-.pure-button-primary {
+/* Primary button */
+.btn-primary {
   background: var(--primary);
   color: var(--body);
 }
 
-.pure-button-primary:hover {
+.btn-primary:hover {
   background: var(--darkprimary);
   color: var(--body);
   box-shadow: 0 2px 12px rgba(22, 84, 123, 0.35);
 }
 
-/* Secondary / Guardian button */
-.pure-button:not(.pure-button-primary) {
+/* Secondary button */
+.btn:not(.btn-primary) {
   background: var(--body);
   color: var(--secondary);
   border: 2px solid var(--secondary);
 }
 
-.pure-button:not(.pure-button-primary):hover {
+.btn:not(.btn-primary):hover {
   background: var(--secondary);
   color: var(--body);
   box-shadow: 0 2px 12px rgba(236, 102, 37, 0.25);
+}
+
+/* Small text below card */
+.smalltext {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--textcolor);
+}
+
+.smalltext a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.smalltext a:hover {
+  text-decoration: underline;
 }

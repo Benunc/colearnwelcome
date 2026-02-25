@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Select your user type to login to Canvas</title>
+    <title>Colearn Academy Canvas</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-196.png" type="image/png" sizes="196x196">
+    <link rel="apple-touch-icon" href="favicon-196.png" sizes="196x196">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,11 +19,16 @@
         <img src="coLearn-academy-logo.png" alt="coLearn Academy" />
         <h3>Log into Canvas:</h3>
         <div class="buttonbox">
-            <p><a class="pure-button pure-button-primary" href="https://colearn.instructure.com/login/saml">Student</a></p>
-            <p><a class="pure-button pure-button-primary" href="https://colearn.instructure.com/login/saml/204">Teacher/Staff</a></p>
-            <p><a class="pure-button" href="https://colearn.instructure.com/login/canvas">Parent/Guardian</a></p>
+            <form action="https://colearn.instructure.com/login/saml/204" method="get">
+                <button type="submit" class="btn btn-primary">Student/Teacher/Staff</button>
+            </form>
+            <form action="https://colearn.instructure.com/login/canvas" method="get">
+                <button type="submit" class="btn">Parent/Guardian</button>
+            </form>
         </div>
     </div>
+    <p class="smalltext">Not trying to log into Canvas?<br><a href="https://colearn-academy.com">Return to the Home page</a></p>
+
   </div>
-  </body>
+</body>
 </html>
