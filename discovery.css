@@ -1,0 +1,108 @@
+/* coLearn Canvas Discovery – theme variables */
+:root {
+  --primary: #3c8caa;
+  --darkprimary: #16547b;
+  --secondary: #ec6625;
+  --textcolor: #333;
+  --darkgrey: #222;
+  --greybg: #eee;
+  --body: #fff;
+  --bodytext: "Inter", sans-serif;
+  --headingtext: "Be Vietnam Pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--greybg);
+  color: var(--textcolor);
+  font-family: var(--bodytext);
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 420px;
+}
+
+.boxbox {
+  background: var(--body);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.boxbox img {
+  display: block;
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto 1.75rem;
+  object-fit: contain;
+}
+
+.boxbox h3 {
+  margin: 0 0 1.5rem;
+  color: var(--darkgrey);
+  font-family: var(--headingtext);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.buttonbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.buttonbox p {
+  margin: 0;
+}
+
+.buttonbox a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-family: var(--bodytext);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+/* Primary buttons (Student, Teacher/Staff) */
+.pure-button-primary {
+  background: var(--primary);
+  color: var(--body);
+}
+
+.pure-button-primary:hover {
+  background: var(--darkprimary);
+  color: var(--body);
+  box-shadow: 0 2px 12px rgba(22, 84, 123, 0.35);
+}
+
+/* Secondary / Guardian button */
+.pure-button:not(.pure-button-primary) {
+  background: var(--body);
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+
+.pure-button:not(.pure-button-primary):hover {
+  background: var(--secondary);
+  color: var(--body);
+  box-shadow: 0 2px 12px rgba(236, 102, 37, 0.25);
+}

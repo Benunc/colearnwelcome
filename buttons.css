@@ -1,0 +1,5 @@
+/* Minimal reset for buttons – main styles in discovery.css */
+.pure-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
